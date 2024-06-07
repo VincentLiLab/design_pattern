@@ -1,6 +1,5 @@
 #include "current_condition_display.hpp"
 
-#include <exception>
 #include <iostream>
 
 void CurrentConditionDisplay::Update(float temperature, float humidity, float pressure) {

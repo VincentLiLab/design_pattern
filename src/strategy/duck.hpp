@@ -9,13 +9,13 @@
 class Duck
 {
 public:
-  explicit Duck(std::shared_ptr<FlyBehavior> &&fly_behavior, std::shared_ptr<QuackBehavior> &&quack_behavior);    
+  explicit Duck(std::unique_ptr<FlyBehavior> &&fly_behavior, std::unique_ptr<QuackBehavior> &&quack_behavior);    
   virtual ~Duck();
   
   void PerformFly(void);
   void PerformQuack(void);
-  void SetFlyBehavior(std::shared_ptr<FlyBehavior> &&fly_behavior);
-  void SetQuackBehavior(std::shared_ptr<QuackBehavior> &&quack_behavior);
+  void SetFlyBehavior(std::unique_ptr<FlyBehavior> &&fly_behavior);
+  void SetQuackBehavior(std::unique_ptr<QuackBehavior> &&quack_behavior);
 
   Duck() = delete;
   Duck(const Duck &) = delete;
@@ -24,8 +24,8 @@ public:
   Duck& operator=(Duck &&) = delete;
 
 private:
-  std::shared_ptr<FlyBehavior> fly_behavior_;
-  std::shared_ptr<QuackBehavior> quack_behavior_;
+  std::unique_ptr<FlyBehavior> fly_behavior_;
+  std::unique_ptr<QuackBehavior> quack_behavior_;
 };
 
 #endif 

@@ -33,4 +33,11 @@ add_test(NAME observer_test COMMAND observer_test)
 
 target_link_libraries(observer_test ${PROJECT_NAME})
 
+
+add_executable(decorator_test decorator_test.cpp)
+
+add_test(NAME decorator_test COMMAND decorator_test)
+
+target_link_libraries(decorator_test ${PROJECT_NAME})
+
 include(CTest)

@@ -24,6 +24,7 @@ target_include_directories(${moudle}
                           "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )
 
+internal_add_subdirectorys(modules)
 
 # install the target and create export-set
 install(TARGETS ${moudle}
@@ -34,7 +35,7 @@ install(TARGETS ${moudle}
         INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 
-install(FILES ${header_files} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+# install(FILES ${header_files} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 # install the configuration targets
 install(EXPORT ${moudle}Targets
@@ -69,7 +70,3 @@ export(EXPORT ${moudle}Targets
   FILE "${CMAKE_CURRENT_BINARY_DIR}/${moudle}Targets.cmake"
   NAMESPACE DesignPattern::
 )
-
-include("${CMAKE_SOURCE_DIR}/cmake/Helper.cmake")
-
-internal_add_subdirectorys(modules)

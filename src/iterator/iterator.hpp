@@ -1,7 +1,9 @@
-#ifndef _DESIGN_PATTERN_ADAPTER_ITERATOR_H_
-#define _DESIGN_PATTERN_ADAPTER_ITERATOR_H_
+#ifndef _DESIGN_PATTERN_ITERATOR_ITERATOR_H_
+#define _DESIGN_PATTERN_ITERATOR_ITERATOR_H_
 
-namespace adapter {
+#include "menu_item.hpp"
+
+namespace iterator {
 
 class Iterator
 {
@@ -10,6 +12,7 @@ public:
   virtual ~Iterator() = default;
 
   virtual bool HasNext(void) const = 0 ;
+  virtual MenuItem& Next(void) = 0;
 
   Iterator(const Iterator &) = delete;
   Iterator& operator=(const Iterator &) = delete;

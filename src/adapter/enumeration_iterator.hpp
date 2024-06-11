@@ -7,7 +7,7 @@
 #include "iterator.hpp"
 
 
-class EnumerationAdapter : public Iterator
+class EnumerationAdapter : public adapter::Iterator
 {
 public:
   explicit EnumerationAdapter(std::unique_ptr<Enumeration> &&);

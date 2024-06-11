@@ -5,7 +5,7 @@
 #include "src/adapter/iterator.hpp"
 #include "src/adapter/enumeration_iterator.hpp"
 
-void function(const Iterator &it) {
+void function(const adapter::Iterator &it) {
   it.HasNext();
 }
 

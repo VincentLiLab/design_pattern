@@ -45,4 +45,8 @@ add_executable(adapter_test adapter_test.cpp)
 add_test(NAME adapter_test COMMAND adapter_test)
 target_link_libraries(adapter_test ${PROJECT_NAME})
 
+add_executable(template_test template_test.cpp)
+add_test(NAME template_test COMMAND template_test)
+target_link_libraries(template_test ${PROJECT_NAME})
+
 include(CTest)

@@ -8,7 +8,7 @@
 class User
 {
 public:
-  User(std::unique_ptr<Command> &&);
+  explicit User(std::unique_ptr<Command> &&);
   ~User() = default;
 
   void SetCommand(std::unique_ptr<Command> &&);

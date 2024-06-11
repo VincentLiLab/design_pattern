@@ -9,7 +9,7 @@
 class DoorOffCommand : public Command 
 {
 public:
-  DoorOffCommand(const std::shared_ptr<Door> &door);
+  explicit DoorOffCommand(const std::shared_ptr<Door> &door);
   virtual ~DoorOffCommand() = default;
 
   virtual void Execute(void) override;

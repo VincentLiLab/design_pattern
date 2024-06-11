@@ -9,7 +9,7 @@
 class LightOnCommand : public Command 
 {
 public:
-  LightOnCommand(const std::shared_ptr<Light> &);
+  explicit LightOnCommand(const std::shared_ptr<Light> &);
   virtual ~LightOnCommand() = default;
 
   virtual void Execute(void) override;

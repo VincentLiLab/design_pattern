@@ -40,4 +40,10 @@ add_test(NAME decorator_test COMMAND decorator_test)
 
 target_link_libraries(decorator_test ${PROJECT_NAME})
 
+add_executable(factory_test factory_test.cpp)
+
+add_test(NAME factory_test COMMAND factory_test)
+
+target_link_libraries(factory_test ${PROJECT_NAME})
+
 include(CTest)

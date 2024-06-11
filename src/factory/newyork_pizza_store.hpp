@@ -13,7 +13,7 @@ public:
   NewyorkPizzaStore() = default;
   virtual ~NewyorkPizzaStore() = default;
   
-  virtual std::unique_ptr<Pizza> CreatePizza(void);
+  virtual std::unique_ptr<Pizza> CreatePizza(void) override;
 
   NewyorkPizzaStore(const NewyorkPizzaStore &) = delete;
   NewyorkPizzaStore& operator=(const NewyorkPizzaStore &) = delete;

@@ -8,9 +8,9 @@ class NewYorkPizza : public Pizza
 public:
   NewYorkPizza() = default;
   virtual ~NewYorkPizza() = default;
-  virtual void Bake(void);
-  virtual void Cut(void);
-  virtual void Box(void);
+  virtual void Bake(void) override;
+  virtual void Cut(void) override;
+  virtual void Box(void) override;
 
   NewYorkPizza(const NewYorkPizza &) = delete;
   NewYorkPizza& operator=(const NewYorkPizza &) = delete;

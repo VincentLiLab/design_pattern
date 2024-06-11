@@ -13,7 +13,7 @@ public:
   ChicagoPizzaStore() = default;
   virtual ~ChicagoPizzaStore() = default;
   
-  virtual std::unique_ptr<Pizza> CreatePizza(void);
+  virtual std::unique_ptr<Pizza> CreatePizza(void) override;
 
   ChicagoPizzaStore(const ChicagoPizzaStore &) = delete;
   ChicagoPizzaStore& operator=(const ChicagoPizzaStore &) = delete;

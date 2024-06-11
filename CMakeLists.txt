@@ -22,28 +22,24 @@ internal_add_subdirectorys(modules)
 enable_testing()
 
 add_executable(strategy_test strategy_test.cpp)
-
 add_test(NAME strategy_test COMMAND strategy_test)
-
 target_link_libraries(strategy_test ${PROJECT_NAME})
 
 add_executable(observer_test observer_test.cpp)
-
 add_test(NAME observer_test COMMAND observer_test)
-
 target_link_libraries(observer_test ${PROJECT_NAME})
 
-
 add_executable(decorator_test decorator_test.cpp)
-
 add_test(NAME decorator_test COMMAND decorator_test)
-
 target_link_libraries(decorator_test ${PROJECT_NAME})
 
 add_executable(factory_test factory_test.cpp)
-
 add_test(NAME factory_test COMMAND factory_test)
-
 target_link_libraries(factory_test ${PROJECT_NAME})
+
+add_executable(command_test command_test.cpp)
+add_test(NAME command_test COMMAND command_test)
+target_link_libraries(command_test ${PROJECT_NAME})
+
 
 include(CTest)

@@ -57,4 +57,8 @@ add_executable(composite_test composite_test.cpp)
 add_test(NAME composite_test COMMAND composite_test)
 target_link_libraries(composite_test ${PROJECT_NAME})
 
+add_executable(proxy_test proxy_test.cpp)
+add_test(NAME proxy_test COMMAND proxy_test)
+target_link_libraries(proxy_test ${PROJECT_NAME})
+
 include(CTest)

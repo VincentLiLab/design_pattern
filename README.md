@@ -1,1 +1,1 @@
-This repository includes some simple example of design pattern corresponding to the [_design_pattern.md_](https://github.com/VincentLiLab/Tech_Insights.git/language/design_pattern.md)
+This repository includes some simple example of design pattern corresponding to the [_design_pattern.md_](https://github.com/VincentLiLab/Tech_Insights/blob/master/languages/design_pattern.md)

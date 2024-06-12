@@ -13,9 +13,9 @@ void WeatherData::registerObserver(const std::shared_ptr<Observer> &observer) {
 }
 
 void WeatherData::notifyObservers() {
-  for (const auto it : this->container_) {
+  for (const auto &it : this->container_) {
       auto observer = it.lock();
-      if(observer != nullptr) {
+      if (observer != nullptr) {
         observer->Update(this->temperature_, this->humidity_, this->pressure_);
         observer->Display();
       }

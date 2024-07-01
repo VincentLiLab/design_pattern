@@ -1,5 +1,8 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
     "editor.tabSize": 2,
-    "editor.detectIndentation": false
+    "clangd.arguments": [
+        "--compile-commands-dir",
+        "out/build/clang/"
+    ]
 }
